@@ -1,0 +1,16 @@
+# Ignore virtual environment folder
+venv/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Editor and system files
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# Ignore output CSV or data files if you don’t want to upload them
+output_names.csv

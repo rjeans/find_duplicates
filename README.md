@@ -15,3 +15,9 @@ This project groups similar company names based on fuzzy matching and outputs a 
    ```bash
    git clone https://github.com/your-username/your-repo.git
    cd your-repo
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   pip install -r requirements.txt
+   python3 process_names.py
+
+   ```

@@ -26,4 +26,12 @@ jobs:
       run: |
         source venv/bin/activate
         python find_duplicates.py
+        - name: Compare output files
+        run: |
+          diff -u output_names.csv test_output_names.csv
+        continue-on-error: true  # This allows the step to fail but continue the workflow
+  
+    - name: Check comparison result
+      if: failure()  # This step will only run if the previous one failed
+      run: echo "The output files do not match!"
 
